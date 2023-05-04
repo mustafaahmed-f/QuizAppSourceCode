@@ -1,0 +1,18 @@
+h1{
+  color: #653383
+}
+.bg-spec
+{
+   background-color:  #653383
+}
+.alert{
+  display: none;
+}
+.main{
+  width:50%
+}
+@media screen and (max-width: 900px) {
+  .main{
+    width:90%
+  }
+}

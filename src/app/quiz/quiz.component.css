@@ -1,0 +1,32 @@
+button{
+  cursor: pointer;
+  background-color:  #653383;
+  color : white;
+}
+button:hover{
+  background-color:  #653383;
+  color : white;
+}
+.alert
+{
+  display: none;
+}
+.text-spec
+{
+    color: #653383
+}
+#Correct,#inCorrect{
+  display: none;
+}
+.main{
+  width:50%
+}
+@media screen and (max-width: 900px) {
+  .main{
+    width:90%
+  }
+}
+.bg-spec
+{
+   background-color:  #653383
+}

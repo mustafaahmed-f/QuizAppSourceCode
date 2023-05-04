@@ -1,0 +1,27 @@
+<div class=" main bg-white m-auto shadow-lg rounded-lg  overflow-auto">
+  <div class="p-3 bg-light border-bottom overflow-auto">
+      <h1 class="text-spec text-center">Quiz</h1>
+      <span class="float-right bg-spec rounded-pill text-white p-2 "><span id="currentQuestion">{{currentIndex+1}}</span> Of <span
+              id="totalNumberOfQuestions">{{totalQuestions}}</span> Questions</span>
+
+      <span id="inCorrect" class="btn btn-danger float-left">InCorrect</span>
+      <span id="Correct" class="btn btn-success float-left">Correct</span>
+      <div class="clearFix"></div>
+
+  </div>
+
+  <div class="p-4 text-spec">
+      <h5 class="d-inline">Q: {{Question}}</h5>
+      <!-- <h5 id="question" class="d-inline"></h5> -->
+      <div id="rowAnswer">
+        <div class="form-check" *ngFor="let item of shuffledAnswers">
+          <label class="form-check-label">
+              <input type="radio" class="form-check-input" name="difficulty" id="difficulty" [value]="item" (change)="getAnswer($event)">
+              {{item}}
+          </label>
+       </div>
+      </div>
+      <div id="alert" class="alert alert-danger mt-3">Please Choose Your Answer</div>
+      <button class="btn float-end py-2 px-4 bg-spec rounded-pill text-white my-4" id="next" (click)="nextQuestion()">{{nextBtnText}}</button>
+  </div>
+</div>

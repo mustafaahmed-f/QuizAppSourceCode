@@ -1,0 +1,22 @@
+.main{
+  width:50%
+}
+@media screen and (max-width: 900px) {
+  .main{
+    width:90%
+  }
+}
+.text-spec
+{
+    color: #653383
+}
+
+a{
+  cursor: pointer;
+  background-color:  #653383;
+  color : white;
+}
+a:hover{
+  background-color:  #653383;
+  color : white;
+}
